@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Generate your color with web-app">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/main.css" type="text/css" charset="UTF-8">
+    <link href="../images/brush.ico" rel="shortcut icon" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <title>Cоздание</title>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="header-line">
+                <div class="header-logo">
+                    <a href="../templates/main.html" title="Main page">
+                        <img class="brush-img" src="../images/brush.ico" alt="ColorPalete">
+                            <span>ColorPallete</span>
+                    </a>
+                </div>
+                 <div class="nav">
+                     <a class="nav-item" href="../templates/create.html">Создать</a>
+                     <a class="nav-item" href="@">Избранные цвета</a>
+                     <a class="nav-item" href="@">Палитра</a>
+                </div>   
+            </div>
+        </div>
+    </div>
+    <div class="mainpage">
+        <div class="create">
+            <span>Создание цвета</span>
+            <div class="color">
+                <input class="customize" type="color" id="base-color" value="#ff0000">
+            </div>
+            <button id="save-color">Сохранить цвет</button>
+            <div id="saved-color" class="color"></div>
+        </div>
+    </div>
+    
+    <script src="../js/create.js"></script>
+</body>
+</html>
